@@ -1,0 +1,223 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: normal;    
+    background-color: ghostwhite;
+    color: black;
+}
+
+.noScroll{
+    overflow-y: hidden;
+}
+
+nav{      
+    position: fixed;   
+    background-color: black;    
+    height: 50px;
+    width: 100%;    
+    z-index: 2;  
+}
+
+#logo, #cart_button{
+    width: 100px;
+    height: 50px;    
+}
+
+.navigation{    
+    display: flex;  
+    height: 100%;   
+    justify-content: space-around;   
+    align-items:center;
+    text-transform: uppercase;   
+}
+
+.navigation a{   
+    color: white;
+    text-align: center;        
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;  
+    border-radius: 20px;
+    font-size: 1.2em;
+}
+
+.navigation a:hover{
+    background-color: gray;
+    color: black;   
+}
+
+.navigation a:link{
+    text-decoration: none;    
+}
+
+header{
+    background-image: url("http://localhost/hw2/public/img/Area_IconHeader_Sys_Prog_11_2019_1920x7204.png");
+    background-size: cover;   
+    position: relative; 
+    height: 500px;       
+    margin-bottom: 15px;  
+    /*z-index: -1;  */
+}
+
+#check_out, #messages_button, #back_button{    
+    background-color: gray;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.message_body:hover{
+    cursor: pointer;
+}
+
+#check_out:hover,#cart_button,.delete:hover, #messages_button:hover,  #back_button:hover{
+    cursor: pointer;
+    color: white;
+}
+
+#container_cart #cart {    
+    overflow-y: scroll;  
+    background-color: whitesmoke;
+    display: flex; 
+    text-align: center;     
+    flex-direction: column;    
+    align-items: center;   
+    width: 500px;      
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-top: 3%; 
+     
+}
+
+.cart_element{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    
+}
+
+.cart_element .title{    
+    width: 50%;
+
+}
+
+
+#cart img{  
+    width: 100px;
+    height: 100px;
+
+}
+.delete{
+    border: 1px solid black;
+    background-color: red;
+    border-radius: 5px;
+    text-align: center;
+    width: 20px;
+    height: 20px;    
+}
+
+#cart h2{
+    margin: 1% 0% 3% 0%;
+}
+
+.hidden, #modal.hidden, #messages_content.hidden, #modal_content.hidden{
+    display: none;
+}
+
+#modal div #modal_content,#modal div #messages_content{     
+    text-align: center;  
+    width: 100%;
+    height: 100%;  
+    overflow-y: scroll;   
+}
+#show_orders:hover{
+    cursor: pointer;
+}
+
+#modal{   
+    color: black;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;     
+}
+#modal div{  
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;    
+    background-color: snow;
+    width: 50%;
+    height: 50%;
+    border: 2px solid black;    
+}
+
+
+div#modal_head{
+    position: relative;
+    display: flex; 
+    align-items: center;     
+    border: 0px;
+    width: 100%;
+}
+
+div#modal_head .delete{
+    position: absolute;
+    right: 3%;
+    top: 10%;
+}
+
+footer{
+    position: absolute;    
+    width: 100%;
+}
+
+footer div{
+    margin-top: 15px;   
+    display: flex; 
+    background-color: black;       
+    height: 50px;
+    width: 100%;   
+    color: white; 
+    justify-content: space-around;  
+    align-items: center; 
+}
+
+footer em, footer a{
+    color: whitesmoke;
+    font-style: normal;
+    font-weight: bold;
+}
+
+footer a:link{
+    text-decoration: none;    
+}
+
+@media(max-width: 500px){
+    body{
+        font-size: 14px;        
+    } 
+
+    #logo, #cart_button{
+        width: 50px;
+        height: 50px;
+    }
+
+    footer {
+        margin: 0px;        
+        justify-content: center;
+        align-items: flex-start;
+    }    
+    
+}

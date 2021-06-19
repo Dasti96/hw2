@@ -1,0 +1,113 @@
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    color: black; 
+    height: 100vh;  
+}
+
+form{   
+    position: absolute;   
+    top: 15%;
+    display: flex;    
+    align-items: center;    
+    flex-direction: column;
+    width: 100%;  
+}
+
+#form_title{
+    font-size: 1.5em;
+    margin: 2%;  
+}
+
+
+form div{   
+    color: black;  
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-around;
+    align-items: center; 
+    text-align: center;
+    height: 100%;
+}
+
+.subTitle, #category{
+    margin: 5%;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#category{
+    font-size: 1em;
+}
+
+form div label{
+    margin: 1%;
+}
+
+
+input{
+    margin: 2%;
+}
+
+.hidden, #modal.hidden{
+    display: none;
+}
+
+.error, .essential{
+    color: red;
+}
+
+
+
+#container_cart{  
+    color: black;   
+    display: flex;
+    position: fixed;
+    top: 5%;   
+    left: 65%;
+    flex-direction: column;    
+    align-items: center;  
+    height: 500px;    
+}
+
+#cart {   
+    overflow-y: scroll;  
+    background-color: whitesmoke;
+    display: flex; 
+    text-align: center;     
+    flex-direction: column;    
+    align-items: center;   
+    width: 500px;      
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-top: 3%;        
+}
+
+.cart_element{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+#message{
+    font-size: 1.2em;
+    width: 500px;    
+    height: 300px;   
+    resize: none;
+}
+
+#object{
+    width: 300px;
+    font-size: 1.5em;
+    height: 1.5em;    
+    resize: none;
+}
+
+footer{
+    top: 100%;
+}
